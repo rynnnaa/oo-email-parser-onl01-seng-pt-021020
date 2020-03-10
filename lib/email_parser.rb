@@ -13,6 +13,8 @@ class EmailAddressParser
   end
   
   def parse(string)
+    parsed = string.each do |string| 
+      
     @@emails << string
     
     
