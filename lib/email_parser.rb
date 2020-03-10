@@ -4,20 +4,15 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  @@emails = []
   
   attr_accessor :parse
   
   def initialize(string)
-    @string
+    @string = string
   end
   
-  def parse(string)
-    parsed = string.each do |string| 
-      
-    @@emails << string
-    
-    
+  def parse
+    string.split(/, | /).unique
   end 
   
 end
