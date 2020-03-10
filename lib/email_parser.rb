@@ -11,9 +11,8 @@ class EmailAddressParser
     @string
   end
   
-  
-  
-  def parse
+  def parse(string)
+    
   end 
   
 end
